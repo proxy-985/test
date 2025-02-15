@@ -1,0 +1,385 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+  
+    padding: 0;
+    
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+/* 更改图片的大小 */
+img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+/* 确定盒子的大小 */
+.box {
+    position: relative;
+    width: 958px;
+    height: 284px;
+    /* 居中 */
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+} 
+.imgs {
+    position: absolute;
+    width: 730px;
+    height: 284px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+/* 让图片都叠在一起 */
+.imgs li {
+    position: absolute;
+    width: 730px;
+    transition: 0.5s;
+}
+/* 给左右按钮设计样式，和定位 */
+.box .left {
+    position: absolute;
+    font-size: 24px;
+    color: white;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: black;
+    border-radius: 18px;
+    /* 添加半透明 */
+    opacity: .3;
+    top: 50%;
+    left: 0;
+    z-index: 999;
+}
+.box .right {
+    position: absolute;
+    font-size: 24px;
+    color: white;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: black;
+    border-radius: 18px;
+    /* 添加半透明 */
+    opacity: .3;
+    top: 50%;
+    right: 0;
+    z-index: 999;
+}
+/* 给左右按钮添加鼠标移入样式 */
+.left:hover {
+    /* 把透明度挑高一点，让按钮看起来更亮一些 */
+    opacity: .7;
+}
+.right:hover {
+    opacity: .7;
+}
+/* 把图片错开 */
+.imgs .one {
+    transform: translateX(-150px) scale(0.9);
+    z-index: 1;
+}
+/* 第二张图片在中间，层级最高 */
+.imgs .two {
+    z-index: 2;
+}
+.imgs .three {
+    transform: translateX(150px) scale(0.9);
+    z-index: 1;
+}
+/* 刚开始不显示的图片就放在中间图片的下面 */
+.imgs .four {
+    transform: scale(0.9);
+}
+.imgs .five {
+    transform: scale(0.9);
+}
+.imgs .six {
+    transform: scale(0.9);
+}
+/* 设计小圆圈 */
+/* 定位 */
+.list {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    margin-left: -81px ;
+    z-index: 777;
+}
+/* 设计样式 */
+.list li {
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 50%;
+    margin: 0 6px;
+    cursor: pointer; 
+}
+/* 小圆圈改变后的样式 */
+.list .change {
+    background-color: rgb(236, 65, 65);
+}
+/* 左右两边各一个盒子 */
+.rights{
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    height: 255.5px;
+    width: 100px;
+}
+.lefts{
+    position: absolute;
+    left: 0;
+    bottom: 14px;
+    height: 255.5px;
+    width: 100px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between; /* 将内容对齐到两侧 */
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* 确保导航栏在最上层 */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 100px; /* 根据需要调整logo的大小 */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-container span {
+    font-size: 24px;
+    color: #333;
+}
+
+.login-button {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    margin-left: 20px;
+}
+
+.login-button:hover {
+    background-color: #e8e8e8;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-top: 60px; /* 确保内容不被导航栏遮挡 */
+}
+
+.box {
+    /* 大盒子样式 */
+    margin-top: 60px; /* 确保内容不被导航栏遮挡 */
+}
+
+.left, .right {
+    /* 按钮样式 */
+}
+
+.imgs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+.imgs li {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.imgs img {
+    width: 100%;
+    height: auto;
+}
+
+.list {
+    /* 列表样式 */
+}
+
+.rights, .lefts {
+    /* 侧边样式 */
+}
+
+aside {
+    margin-top: 60px; /* 确保侧边栏不被导航栏遮挡 */
+}
+.item-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 创建四列 */
+    gap: 20px; /* 网格项之间的间隔 */
+    padding: 20px;
+}
+
+.item {
+    width: 140px;
+    margin: 0 auto;
+    
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* 相对于父容器定位 */
+  }
+ 
+
+  .item .top {
+   background-color: rgba(255, 252, 252, 0.938);
+    position: relative;
+  }
+
+  .item .top img {
+    vertical-align: top;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* 封面背景样式 */
+  .item .top .cover {
+    /*width: 140px;
+    height: 140px;*/
+    width: 100%; /* 封面图宽度与项目宽度一致 */
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    background: url(images/coverall.png) no-repeat;
+background-position: 0, 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .item .top .info {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+/*高度*/
+height: 27px;
+width: 100%;
+background: url(img/coverall.png) no-repeat;
+background-position: 0 -537px;
+/*字体颜色*/
+color: #ccc;
+font-size: 12px;
+line-height: 27px;
+padding: 10px;
+
+box-sizing: border-box;
+border-radius: 10px; /* 圆角边框 */
+/*
+原文链接：https://blog.csdn.net/JingnanJia/article/details/136438295*/
+}
+ /*修改选择器名*/
+ .item .top .info .hearset {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 14px;
+    height: 11px;
+  
+    background: url(img/icon.png) no-repeat;
+    background-position: 0 -24px;
+  }
+  
+
+  .item .top .info .play {
+    width: 16px;
+    height: 17px;
+    position: absolute;
+   
+    right: 10px;
+    bottom: 5px;
+  
+    background: url(img/icon.png) no-repeat;
+    background-position: 0 0;
+  }
+  
+  .item .top .info .count {
+    margin-left: 4px;
+  }
+  .icon {
+    background: url(img/coverall.png) no-repeat;
+    display: inline-block;
+  }
+  .hearset {
+    width: 14px;
+    height: 11px;
+    background-position: 0 -24px;
+  }
+  
+  .play {
+    width: 16px;
+    height: 17px;
+    background-position: 0 0;
+  }
+  .item .top .info .icon-play {
+    position: absolute;
+    /* top: 0px; */
+    right: 10px;
+    bottom: 5px;
+  }
+  
+  .item .top .info .icon2-hot {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.controls {
+    display: flex;
+    align-items: center;
+}
+.controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.song-info {
+    flex-grow: 1;
+    text-align: center;
+}

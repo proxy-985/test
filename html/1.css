@@ -1,0 +1,184 @@
+
+/* 外部容器样式设置 */
+.wrap {
+    margin: 200px auto 0;
+    width: 530px;
+    height: 366px;
+    position: relative;
+}
+
+/* 顶部标题样式设置 */
+.title {
+    height: 39px;
+    line-height: 39px;
+    background-color: #2d2d2d;
+    padding: 0px 25px 0px 18px;
+    border-bottom: 1px solid #191919;
+    border-radius: 4px 4px 0 0;
+}
+
+.login-one {
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+}
+
+.quite {
+    margin-left: 20px;
+    float: right;
+    color: #888888;
+    font-size: 23px;
+}
+
+/*  用户登录区域样式设置*/
+.user-login {
+    width: 528px;
+    height: 326px;
+    border: 1px solid #d8d8d8;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+}
+
+.user-login-inner {
+    width: 488px;
+    height: 266.26px;
+    margin: 30px 20px;
+    position: relative;
+}
+
+/* 左侧登录区域 */
+.left-login {
+    width: 225px;
+    height: 205.3px;
+    padding: 0px 35px 3px 40px;
+    border-right: 1px dotted #ccc;
+}
+
+.left-login img {
+    width: 224px;
+    height: 120px;
+}
+
+.left-login a {
+    display: inline-block;
+    width: 224px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.byphone-login {
+    background-color: #2d7dca;
+    border: 1px solid #cdcccc;
+    color: #fff;
+}
+
+.byphone-login:hover {
+    background-color: #4a94d9;
+}
+
+.register {
+    background-color: #f3f3f3;
+    border: 1px solid #cbcbcb;
+    color: #333333;
+}
+
+.register:hover {
+    background-color: #ffffff;
+}
+
+/* 右侧用户多选登录方案区域样式设置 */
+.right-login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 148px;
+    height: 214.21px;
+    margin-top: -15px;
+    padding: 3px 0 3px 39px;
+}
+
+.right-login a {
+    display: inline-block;
+    width: 148px;
+    height: 38.55px;
+    line-height: 38.55px;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #333333;
+}
+.right-login li a:hover{
+    text-decoration: underline;
+}
+.right-login i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 14px;
+    width: 38px;
+    height: 38px;
+}
+
+.right-login li:first-child i {
+    background-image: url(./img/微信logo.jpg);
+    background-position: -150px -670px;
+}
+
+.right-login li:nth-child(2) i {
+    background-image: url(./img/qqlogo.jpg);
+    background-position: -190px -670px;
+}
+
+.right-login li:nth-child(3) i {
+    background-image: url(./img/微博logo.jpg);
+    background-position: -231px -670px;
+}
+
+.right-login li:nth-child(4) i {
+    background-image: url(./img/网易logo.jpg!bg);
+    background-position: -271px -670px;
+}
+
+/* 底部同意服务条款区域样式设置 */
+.user-agree {
+    position: relative;
+    top: -50px;
+    margin-left: 33px;
+}
+
+.agree {
+    font-family: NotoSansHans-Regular;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.4);
+    line-height: 15px;
+    margin-left: -4px;
+    margin-right: -5px;
+}
+
+.user-agree a {
+    color: #507DAF;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: -4px;
+}
+
+input[type=checkbox] {
+    vertical-align: middle;
+    border-color: #767676;
+}
+
+input[type=checkbox] {
+    border-color: #4f4f4f;
+}
+
+/* 底部右侧二维码样式设置 */
+.code img {
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
